@@ -12,6 +12,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -19,10 +20,12 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>St.John's</h1>
+            <h1 id="city"></h1>
             <ul class="day-time">
-              <li>Thursday 09:00</li>
-              <li>Cloudy</li>
+              <li>
+                <span id="day">Thursday</span><span id="time"> 09:00</span>
+              </li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -34,7 +37,7 @@
                   id="icon"
                 />
                 <div>
-                  <strong id="temperature">6</strong>
+                  <strong id="temperature"></strong>
                   <small class="units">
                     <span class="celsius"><a href="#">°C</a></span>
                     |
@@ -45,9 +48,8 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 70%</li>
-                <li>Humidity: 98%</li>
-                <li>Wind: 39 km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>

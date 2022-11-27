@@ -17,10 +17,14 @@ h1 {
 li {
   list-style: none;
 }
+
 ul.day-time {
   margin-top: 0;
   text-align: left;
   padding: 10px;
+}
+#description {
+  text-transform: capitalize;
 }
 .weather-app-wrapper {
   max-width: 600px;
