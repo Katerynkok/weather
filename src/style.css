@@ -23,7 +23,7 @@ ul.day-time {
   text-align: left;
   padding: 10px;
 }
-#description {
+#description::first-letter {
   text-transform: capitalize;
 }
 .weather-app-wrapper {
